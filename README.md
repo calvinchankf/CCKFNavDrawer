@@ -15,4 +15,5 @@ CCKFNavDrawer is my D.I.Y. alternatives of making sliding menu on IOS, which aim
 * Add your IBOutlet and code in DrawerView class in order to customize the appearance of your drawer view.
 
 ### Limitation
-* So far, the project is currently portrait only, I will make it landscape soon. Of couse, I welcome and appreciate someone can make it landscape compatible. FORK me if you want to make it better!
+* It is ios7 only.
+* It is currently portrait only, I will make it landscape soon. Of couse, I welcome and appreciate someone can make it landscape compatible. FORK me if you want to make it better!
