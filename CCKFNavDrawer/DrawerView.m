@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 com.calvin. All rights reserved.
 //
 
-#import "Drawer.h"
+#import "DrawerView.h"
 
-@implementation Drawer
+@implementation DrawerView
 
 - (id)initWithFrame:(CGRect)frame
 {

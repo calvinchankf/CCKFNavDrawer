@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCKFNavDrawer.h"
 
-@interface ViewController : UIViewController
+@interface VC : UIViewController<CCKFNavDrawerDelegate>
+
+- (IBAction)drawerToggle:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *selectionIdx;
 
 @end

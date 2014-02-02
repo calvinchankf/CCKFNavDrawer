@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Drawer : UIView
+@interface DrawerView : UIView
 
+@property (weak, nonatomic) IBOutlet UITableView *drawerTableView;
 @end

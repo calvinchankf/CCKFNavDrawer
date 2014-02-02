@@ -14,13 +14,17 @@
 		3E102AEB1890CA73003F8F41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E102AEA1890CA73003F8F41 /* main.m */; };
 		3E102AEF1890CA73003F8F41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E102AEE1890CA73003F8F41 /* AppDelegate.m */; };
 		3E102AF21890CA73003F8F41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E102AF01890CA73003F8F41 /* Main.storyboard */; };
-		3E102AF51890CA73003F8F41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E102AF41890CA73003F8F41 /* ViewController.m */; };
+		3E102AF51890CA73003F8F41 /* VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E102AF41890CA73003F8F41 /* VC.m */; };
 		3E102AF71890CA73003F8F41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E102AF61890CA73003F8F41 /* Images.xcassets */; };
 		3E102AFE1890CA73003F8F41 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E102AFD1890CA73003F8F41 /* XCTest.framework */; };
 		3E102AFF1890CA73003F8F41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E102ADE1890CA73003F8F41 /* Foundation.framework */; };
 		3E102B001890CA73003F8F41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E102AE21890CA73003F8F41 /* UIKit.framework */; };
 		3E102B081890CA73003F8F41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E102B061890CA73003F8F41 /* InfoPlist.strings */; };
 		3E102B0A1890CA73003F8F41 /* CCKFNavDrawerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E102B091890CA73003F8F41 /* CCKFNavDrawerTests.m */; };
+		3E102B151890CAB2003F8F41 /* CCKFNavDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E102B141890CAB2003F8F41 /* CCKFNavDrawer.m */; };
+		3E102B181890DB0F003F8F41 /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E102B171890DB0F003F8F41 /* VC2.m */; };
+		3EF1A989189A3CCF002BCC83 /* DrawerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF1A988189A3CCF002BCC83 /* DrawerView.xib */; };
+		3EF2DFAF189E0A0D00FF8103 /* DrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2DFAE189E0A0D00FF8103 /* DrawerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +49,21 @@
 		3E102AED1890CA73003F8F41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E102AEE1890CA73003F8F41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E102AF11890CA73003F8F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3E102AF31890CA73003F8F41 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E102AF41890CA73003F8F41 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3E102AF31890CA73003F8F41 /* VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VC.h; sourceTree = "<group>"; };
+		3E102AF41890CA73003F8F41 /* VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VC.m; sourceTree = "<group>"; };
 		3E102AF61890CA73003F8F41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E102AFC1890CA73003F8F41 /* CCKFNavDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCKFNavDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E102AFD1890CA73003F8F41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E102B051890CA73003F8F41 /* CCKFNavDrawerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCKFNavDrawerTests-Info.plist"; sourceTree = "<group>"; };
 		3E102B071890CA73003F8F41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E102B091890CA73003F8F41 /* CCKFNavDrawerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCKFNavDrawerTests.m; sourceTree = "<group>"; };
+		3E102B131890CAB2003F8F41 /* CCKFNavDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKFNavDrawer.h; sourceTree = "<group>"; };
+		3E102B141890CAB2003F8F41 /* CCKFNavDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKFNavDrawer.m; sourceTree = "<group>"; };
+		3E102B161890DB0F003F8F41 /* VC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2.h; sourceTree = "<group>"; };
+		3E102B171890DB0F003F8F41 /* VC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC2.m; sourceTree = "<group>"; };
+		3EF1A988189A3CCF002BCC83 /* DrawerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawerView.xib; sourceTree = "<group>"; };
+		3EF2DFAD189E0A0D00FF8103 /* DrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerView.h; sourceTree = "<group>"; };
+		3EF2DFAE189E0A0D00FF8103 /* DrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +123,14 @@
 		3E102AE41890CA73003F8F41 /* CCKFNavDrawer */ = {
 			isa = PBXGroup;
 			children = (
+				3EF2DFB3189E27A600FF8103 /* CCKFNavDrawer */,
 				3E102AED1890CA73003F8F41 /* AppDelegate.h */,
 				3E102AEE1890CA73003F8F41 /* AppDelegate.m */,
 				3E102AF01890CA73003F8F41 /* Main.storyboard */,
-				3E102AF31890CA73003F8F41 /* ViewController.h */,
-				3E102AF41890CA73003F8F41 /* ViewController.m */,
+				3E102AF31890CA73003F8F41 /* VC.h */,
+				3E102AF41890CA73003F8F41 /* VC.m */,
+				3E102B161890DB0F003F8F41 /* VC2.h */,
+				3E102B171890DB0F003F8F41 /* VC2.m */,
 				3E102AF61890CA73003F8F41 /* Images.xcassets */,
 				3E102AE51890CA73003F8F41 /* Supporting Files */,
 			);
@@ -150,6 +164,18 @@
 				3E102B061890CA73003F8F41 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EF2DFB3189E27A600FF8103 /* CCKFNavDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				3E102B131890CAB2003F8F41 /* CCKFNavDrawer.h */,
+				3E102B141890CAB2003F8F41 /* CCKFNavDrawer.m */,
+				3EF1A988189A3CCF002BCC83 /* DrawerView.xib */,
+				3EF2DFAD189E0A0D00FF8103 /* DrawerView.h */,
+				3EF2DFAE189E0A0D00FF8103 /* DrawerView.m */,
+			);
+			name = CCKFNavDrawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF1A989189A3CCF002BCC83 /* DrawerView.xib in Resources */,
 				3E102AF71890CA73003F8F41 /* Images.xcassets in Resources */,
 				3E102AE91890CA73003F8F41 /* InfoPlist.strings in Resources */,
 				3E102AF21890CA73003F8F41 /* Main.storyboard in Resources */,
@@ -249,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E102AF51890CA73003F8F41 /* ViewController.m in Sources */,
+				3E102AF51890CA73003F8F41 /* VC.m in Sources */,
 				3E102AEF1890CA73003F8F41 /* AppDelegate.m in Sources */,
 				3E102AEB1890CA73003F8F41 /* main.m in Sources */,
+				3E102B151890CAB2003F8F41 /* CCKFNavDrawer.m in Sources */,
+				3EF2DFAF189E0A0D00FF8103 /* DrawerView.m in Sources */,
+				3E102B181890DB0F003F8F41 /* VC2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +490,7 @@
 				3E102B0F1890CA73003F8F41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E102B101890CA73003F8F41 /* Build configuration list for PBXNativeTarget "CCKFNavDrawerTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +499,7 @@
 				3E102B121890CA73003F8F41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

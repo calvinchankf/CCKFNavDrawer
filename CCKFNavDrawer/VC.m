@@ -6,24 +6,39 @@
 //  Copyright (c) 2014年 com.calvin. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "VC.h"
 
-@interface ViewController ()
-
+@interface VC ()
+@property (strong, nonatomic) CCKFNavDrawer *rootNav;
 @end
 
-@implementation ViewController
+@implementation VC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.rootNav = (CCKFNavDrawer *)self.navigationController;
+    [self.rootNav setCCKFNavDrawerDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)drawerToggle:(id)sender {
+    [self.rootNav drawerToggle];
+}
+
+#pragma mark - photoShotSavedDelegate
+
+-(void)CCKFNavDrawerSelection:(NSInteger)selectionIndex
+{
+    NSLog(@"CCKFNavDrawerSelection = %i", selectionIndex);
+    self.selectionIdx.text = [NSString stringWithFormat:@"%i",selectionIndex];
 }
 
 @end
