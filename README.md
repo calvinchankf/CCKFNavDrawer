@@ -1,6 +1,6 @@
 CCKFNavDrawer
 =============
-CCKFNavDrawer is my D.I.Y. alternatives of making sliding menu on IOS, which aims to provide [Android Navigation Drawer](http://developer.android.com/design/patterns/navigation-drawer.html) for developers to make it on IOS.
+CCKFNavDrawer is a custom navigationController implementing sliding menu on IOS, which aims to provide [Android Navigation Drawer](http://developer.android.com/design/patterns/navigation-drawer.html) for developers to make it on IOS.
 
 ### Screenshots
 ![Screenshot](https://raw.github.com/calvinchankf/CCKFNavDrawer/master/screenshot.png)
