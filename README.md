@@ -16,6 +16,27 @@ CCKFNavDrawer is a custom navigationController implementing sliding menu on IOS,
 ### How to use
 * Replace your UINavigationController with CCKFNavDrawer class
 * Add your IBOutlet and code in DrawerView class in order to customize the appearance of your drawer view.
+* Adopt the protocol ```CCKFNavDrawerDelegate```
+* Set setCCKFNavDrawerDelegate to your root view controller. e.g.
+
+```
+self.rootNav = (CCKFNavDrawer *)self.navigationController;
+[self.rootNav setCCKFNavDrawerDelegate:self];
+```
+
+* implement the delegate method. e.g.
+
+```
+- (void)CCKFNavDrawerSelection:(NSInteger)selectionIndex
+{
+  NSLog(@"%i", selectionIndex);
+}
+```
+ in order to get the index of selection in navigation drawer
+
+
+----------
+For detail, please take a look in VC class.
 
 ### Limitation
 * It is ios7 only.
