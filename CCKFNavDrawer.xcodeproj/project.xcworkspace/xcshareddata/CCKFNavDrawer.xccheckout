@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CB627617-48EB-4D66-9574-5D6D64C32D0A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CCKFNavDrawer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4287E388-6777-47E7-ABC4-F01F5282A549</key>
+		<string>https://github.com/calvinchankf/CCKFNavDrawer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CCKFNavDrawer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4287E388-6777-47E7-ABC4-F01F5282A549</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/calvinchankf/CCKFNavDrawer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4287E388-6777-47E7-ABC4-F01F5282A549</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4287E388-6777-47E7-ABC4-F01F5282A549</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CCKFNavDrawer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
