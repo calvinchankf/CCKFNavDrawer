@@ -9,14 +9,15 @@
 #import "CCKFNavDrawer.h"
 #import "DrawerView.h"
 
-#define MENU_WIDTH 200
-#define MENU_DURATION 0.3
 #define SHAWDOW_ALPHA 0.5
+#define MENU_DURATION 0.3
 #define MENU_TRIGGER_VELOCITY 350
 
 @interface CCKFNavDrawer ()
 
 @property (nonatomic) BOOL isOpen;
+@property (nonatomic) float meunHeight;
+@property (nonatomic) float menuWidth;
 @property (nonatomic) CGRect outFrame;
 @property (nonatomic) CGRect inFrame;
 @property (strong, nonatomic) UIView *shawdowView;
@@ -76,11 +77,15 @@
 
 - (void)setUpDrawer
 {
-    float meunHeight = [[UIScreen mainScreen] bounds].size.height;
-    self.outFrame = CGRectMake(-MENU_WIDTH,0,MENU_WIDTH,meunHeight);
-    self.inFrame = CGRectMake (0,0,MENU_WIDTH,meunHeight);
-    
     self.isOpen = NO;
+    
+    // load drawer view
+    self.drawerView = [[[NSBundle mainBundle] loadNibNamed:@"DrawerView" owner:self options:nil] objectAtIndex:0];
+    
+    self.meunHeight = self.drawerView.frame.size.height;
+    self.menuWidth = self.drawerView.frame.size.width;
+    self.outFrame = CGRectMake(-self.menuWidth,0,self.menuWidth,self.meunHeight);
+    self.inFrame = CGRectMake (0,0,self.menuWidth,self.meunHeight);
     
     // drawer shawdow and assign its gesture
     self.shawdowView = [[UIView alloc] initWithFrame:self.view.frame];
@@ -92,8 +97,7 @@
     self.shawdowView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.shawdowView];
     
-    // drawer layout
-    self.drawerView = [[[NSBundle mainBundle] loadNibNamed:@"DrawerView" owner:self options:nil] objectAtIndex:0];
+    // add drawer view
     [self.drawerView setFrame:self.outFrame];
     [self.view addSubview:self.drawerView];
     
@@ -129,7 +133,7 @@
 
 - (void)openNavigationDrawer{
 //    NSLog(@"open x=%f",self.menuView.center.x);
-    float duration = MENU_DURATION/MENU_WIDTH*abs(self.drawerView.center.x)+MENU_DURATION/2; // y=mx+c
+    float duration = MENU_DURATION/self.menuWidth*abs(self.drawerView.center.x)+MENU_DURATION/2; // y=mx+c
     
     // shawdow
     self.shawdowView.hidden = NO;
@@ -155,7 +159,7 @@
 
 - (void)closeNavigationDrawer{
 //    NSLog(@"close x=%f",self.menuView.center.x);
-    float duration = MENU_DURATION/MENU_WIDTH*abs(self.drawerView.center.x)+MENU_DURATION/2; // y=mx+c
+    float duration = MENU_DURATION/self.menuWidth*abs(self.drawerView.center.x)+MENU_DURATION/2; // y=mx+c
     
     // shawdow
     [UIView animateWithDuration:duration
@@ -203,12 +207,12 @@
     if([(UIPanGestureRecognizer*)recognizer state] == UIGestureRecognizerStateChanged) {
 //        NSLog(@"changing");
         float movingx = self.drawerView.center.x + translation.x;
-        if ( movingx > -MENU_WIDTH/2 && movingx < MENU_WIDTH/2){
+        if ( movingx > -self.menuWidth/2 && movingx < self.menuWidth/2){
             
             self.drawerView.center = CGPointMake(movingx, self.drawerView.center.y);
             [recognizer setTranslation:CGPointMake(0,0) inView:self.view];
             
-            float changingAlpha = SHAWDOW_ALPHA/MENU_WIDTH*movingx+SHAWDOW_ALPHA/2; // y=mx+c
+            float changingAlpha = SHAWDOW_ALPHA/self.menuWidth*movingx+SHAWDOW_ALPHA/2; // y=mx+c
             self.shawdowView.hidden = NO;
             self.shawdowView.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:changingAlpha];
         }
