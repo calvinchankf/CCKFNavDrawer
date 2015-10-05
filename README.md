@@ -42,4 +42,4 @@ For detail, please take a look in VC class.
 * It is ios7 only.
 * It is currently portrait only, I will make it landscape soon. Of couse, I welcome and appreciate someone can make it landscape compatible. FORK me if you want to make it better!
 
-### Thank you guys so much for all your supports. The project has been discontinued. Thank you.
+### Thank you guys so much for all your support. The project has been discontinued. Thank you.
